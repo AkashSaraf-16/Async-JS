@@ -35,3 +35,16 @@ getUser(name, (x) => {
     console.log(`Contact details for ${name} is ${phone}`);
   });
 });
+
+// Eg 2:
+function getValue(v, callback) {
+  console.log(v);
+  setTimeout(() => {
+    callback(v);
+    v = 100;
+    callback(v);
+  }, 2000);
+}
+getValue(10, (x) => {
+  console.log(`the value is ${x}`);
+});
