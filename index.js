@@ -1,7 +1,7 @@
 // Import stylesheets
 import './style.css';
 
-// Write Javascript code!
+// Synchronous JavaScript
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>Async JavaScript</h1>`;
 
